@@ -5,7 +5,7 @@
 <html>
 
 <head>
-<title>List Customers</title>
+<title>Employee List</title>
 
 <!-- reference our style sheet -->
 
@@ -38,8 +38,8 @@
 
 			<table>
 				<tr id="headRow">
-					<th>Id</th>
-					<th>First Name</th>
+					<th><a href="/project-demo/app/employee/app/orderById">Id</a></th>
+					<th><a href="/project-demo/app/employee/app/orderByFirstName">First Name</a></th>
 					<th>Last Name</th>
 					<th>Email</th>
 					<th>Action</th>
@@ -49,12 +49,12 @@
 				<c:forEach var="tempEmployee" items="${employee}">
 
 					<!-- construct an "edit" link with employee id -->
-					<c:url var="editLink" value="/employee/showFormForUpdate">
+					<c:url var="editLink" value="/app/employee/app/showFormForUpdate">
 						<c:param name="employeeId" value="${tempEmployee.id}" />
 					</c:url>
 					
 					<!-- construct an "delete" link with employee id -->
-					<c:url var="deleteLink" value="/employee/delete">
+					<c:url var="deleteLink" value="/app/employee/app/delete">
 						<c:param name="employeeId" value="${tempEmployee.id}" />
 					</c:url>
 

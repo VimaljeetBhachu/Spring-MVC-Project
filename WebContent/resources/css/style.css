@@ -83,3 +83,20 @@ tr:nth-child(odd) {background: #ECEFF1;font-size:90%;}
 	margin-bottom: 0px;
 	background: #FFFFFF;
 }
+
+a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a:visited {
+	color: #FFFFFF;
+  text-decoration: none;
+}
+a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
